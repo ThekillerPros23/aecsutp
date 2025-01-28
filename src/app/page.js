@@ -1,11 +1,8 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-r from-black via-gray-900 to-black text-white font-sans">
       {/* Header */}
-      <header className="p-6 flex justify-between items-center border-b border-gray-700">
-        <Image src="/image/logo.svg" alt="logo" width={80} height={80} />
+      <header className="p-6 flex justify-center items-center border-b border-gray-700">
         <nav>
           <ul className="flex gap-8 text-lg">
             <li><a href="#about" className="hover:text-cyan-400 transition">Sobre Nosotros</a></li>
@@ -52,6 +49,14 @@ export default function Home() {
             <h3 className="text-2xl font-semibold">Charla sobre OSINT</h3>
             <p className="mt-4 text-gray-400">Descubre cómo se recopila información pública para investigaciones de seguridad.</p>
           </div>
+        </div>
+        <div className="mt-12">
+          <a 
+            href="https://www.aecsutp.com/inscripcion" 
+            className="inline-block px-6 py-3 text-lg font-bold bg-cyan-500 hover:bg-cyan-400 transition text-black rounded-xl shadow-lg hover:shadow-cyan-500"
+          >
+            Inscribirse Ahora
+          </a>
         </div>
       </section>
 
